@@ -20,14 +20,9 @@ public class Confirm_after_order extends Activity {
     private TextView confirmTo;
     private TextView confirmNumber;
     private TextView addCheckFriend;
-    private TextView orderringTime;
+
     private TextView orderringDate;
 
-
-    private Date currentTime;
-    private DateFormat timeFormat;
-
-    private String formattedTime;
     private String formattedDate;
 
 
@@ -41,17 +36,10 @@ public class Confirm_after_order extends Activity {
         confirmTo = (TextView) findViewById(R.id.confirm_to);
         confirmNumber = (TextView) findViewById(R.id.confirm_number);
         addCheckFriend = (TextView) findViewById(R.id.textView_check_1);
-        orderringTime = (TextView) findViewById(R.id.text_time_order);
         orderringDate = (TextView) findViewById(R.id.text_date_order);
 
-
-        currentTime = Calendar.getInstance().getTime();
-        timeFormat = android.text.format.DateFormat.getTimeFormat(this);
-        formattedTime = timeFormat.format(currentTime);
-        orderringTime.setText(formattedTime);
-
         Calendar c = Calendar.getInstance();
-        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy HH:mm:ss");
+        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy HH:mm");
         formattedDate = df.format(c.getTime());
         orderringDate.setText(formattedDate);
 
@@ -70,8 +58,5 @@ public class Confirm_after_order extends Activity {
 
         this.finish();
     }
-    public void mLocationLatLng(View view){
-        Intent intent = new Intent(this,MyLocation.class);
-        startActivity(intent);
-    }
+
 }

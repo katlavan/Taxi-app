@@ -49,9 +49,6 @@
 
         <activity android:name="com.app.taxi.myTaxy.MapActivity"/>
 
-        <activity android:name="com.app.taxi.myTaxy.MyLocation"/>
-
-
 
     </application>
 

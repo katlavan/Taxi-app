@@ -6,22 +6,24 @@
     android:focusable="true"
     >
 
-    <EditText
+    <AutoCompleteTextView
         android:layout_width="350dp"
         android:layout_height="45dp"
         android:id="@+id/textMain_from"
         android:hint="FROM"
         android:layout_marginTop="50dp"
+        android:completionThreshold="1"
 
         android:layout_gravity="center_horizontal" />
 
-    <EditText
+    <AutoCompleteTextView
         android:layout_width="350dp"
         android:layout_height="45dp"
         android:id="@+id/textMain_to"
         android:layout_marginTop="20dp"
         android:hint="TO"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:completionThreshold="1"/>
 
     <EditText
         android:layout_width="350dp"
