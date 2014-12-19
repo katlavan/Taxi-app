@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TableRow
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/textMain_from"
+            android:hint="FROM"
+            android:layout_marginTop="50dp"
+
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/textMain_to"
+            android:layout_marginTop="50dp"
+            android:hint="TO"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/textMain_number"
+        android:layout_marginTop="20dp"
+        android:inputType="phone"
+        android:hint="Phone Number"
+        android:maxLength="16"
+        />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <CheckBox
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:text="Drunk Friend"
+            android:id="@+id/drunkFriend"
+            android:checked="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:text="Animal delivery"
+            android:id="@+id/checkBox2"
+            android:checked="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <CheckBox
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:text="More than 5 people"
+            android:id="@+id/checkBox3"
+            android:checked="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:text="Weapon with me"
+            android:id="@+id/checkBox4"
+            android:checked="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="@string/btn_accept"
+        android:id="@+id/btnAccept_order"
+        android:layout_gravity="center_horizontal"
+        android:onClick="sendDataFromMainToConfirm"
+        style="@android:style/Animation"
+        android:textColor="#ff000000"
+        android:background="#fff2ffa6" />
+</TableLayout>

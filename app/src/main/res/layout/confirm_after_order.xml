@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:id="@+id/confirm_BackToMain"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goBackToMain" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="From: "
+        android:id="@+id/confirm_from"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="To: "
+        android:id="@+id/confirm_to"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Number: "
+        android:id="@+id/confirm_number"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/text_time_order"
+        android:text="Ordering time"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/text_date_order"
+        android:text="Ordering date"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView_check_1"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView_check2"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView_check3"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GOOGLE MAP"
+        android:id="@+id/btnGoToGoogleMap"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goToGoogleMap" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="ORDER"
+        android:id="@+id/Order"
+        android:textSize="22sp"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="mLocationLatLng" />
+
+</LinearLayout>

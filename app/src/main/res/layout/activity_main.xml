@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:focusable="true"
+    >
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:id="@+id/textMain_from"
+        android:hint="FROM"
+        android:layout_marginTop="50dp"
+
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:id="@+id/textMain_to"
+        android:layout_marginTop="20dp"
+        android:hint="TO"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:id="@+id/textMain_number"
+        android:layout_marginTop="20dp"
+        android:inputType="phone"
+        android:hint="Phone Number"
+        android:maxLength="16"
+        android:textSize="22dp"
+        android:layout_gravity="center_horizontal" />
+
+    <CheckBox
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:text="Drunk Friend"
+        android:id="@+id/drunkFriend"
+        android:checked="false"
+        android:layout_gravity="center_horizontal" />
+
+    <CheckBox
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:text="Animal delivery"
+        android:id="@+id/checkBox2"
+        android:checked="false"
+        android:layout_gravity="center_horizontal" />
+
+    <CheckBox
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:text="More than 5 people"
+        android:id="@+id/checkBox3"
+        android:checked="false"
+        android:layout_gravity="center_horizontal" />
+
+    <CheckBox
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:text="Weapon with me"
+        android:id="@+id/checkBox4"
+        android:checked="false"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="@string/btn_accept"
+        android:id="@+id/btnAccept_order"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="sendDataFromMainToConfirm"
+        style="@android:style/Animation"
+        android:textColor="#ff000000"
+        android:background="#ffffffac" />
+
+</LinearLayout>
